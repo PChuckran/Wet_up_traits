@@ -27,6 +27,8 @@ codon_sites_summary_wide <- codon_sites_summary%>%
   as.data.frame(.)%>%
   pivot_wider(names_from = value, values_from = Freq, names_prefix = "ns_")
 
+
+
 ribo_cts <- read_csv("data/ribo_codon_freq.csv")%>%
   rename(MAG= fasta)  
 
@@ -78,7 +80,26 @@ write.csv(ribo_cts_ID_summary, file = "data/ns_substitutions_by_gene.csv")
 ##this is weird##
 ribo_cts_ID_summary %>%
   ggplot(., aes(nsGC, nsAT_skew))+
+  geom_point()+
+  geom_smooth(method = "lm")
+
+ribo_cts_summary %>%
+  ggplot(., aes(nsGC, nsAT_skew))+
   geom_point()
 
+summary(lm(nsAT_skew~nsGC, ribo_cts_ID_summary))
+
+test_skews <- codon_sites_summary_wide %>%
+  mutate(at_skew = (ns_A-ns_T)/(ns_A+ns_T),
+         gc_skew = (ns_G-ns_C)/(ns_G+ns_C),
+         gc = (ns_G+ns_C)+(ns_G+ns_C+ns_A+ns_T))
+
+## maybe this is it? 
+## come back to this
+test_skews %>%
+  ggplot(., aes(gc, at_skew))+
+  geom_point()+
+  geom_smooth(method = "lm")
 
 
+summary(lm(at_skew~gc, test_skews))

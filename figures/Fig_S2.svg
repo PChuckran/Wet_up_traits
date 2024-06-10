@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='360.00pt' height='288.00pt' viewBox='0 0 360.00 288.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwzNjAuMDB8MC4wMHwyODguMDA='>
+    <rect x='0.00' y='0.00' width='360.00' height='288.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwzNjAuMDB8MC4wMHwyODguMDA=)'>
+<rect x='0.00' y='0.00' width='360.00' height='288.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzcuNjB8MjI5Ljg5fDI0LjI5fDI1NC44NQ=='>
+    <rect x='37.60' y='24.29' width='192.29' height='230.56' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzcuNjB8MjI5Ljg5fDI0LjI5fDI1NC44NQ==)'>
+<rect x='37.60' y='24.29' width='192.29' height='230.56' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<polyline points='46.34,66.80 104.61,108.86 162.88,150.91 221.15,192.97 ' style='stroke-width: 1.49; stroke: #440154; stroke-linecap: butt;' />
+<polyline points='46.34,87.87 104.61,129.93 162.88,171.99 221.15,214.05 ' style='stroke-width: 1.49; stroke: #21908C; stroke-linecap: butt;' />
+<polyline points='46.34,108.94 104.61,151.00 162.88,193.06 221.15,235.12 ' style='stroke-width: 1.49; stroke: #FDE725; stroke-linecap: butt;' />
+<polygon points='46.34,34.77 104.61,87.85 162.88,140.30 221.15,186.65 221.15,199.30 162.88,161.53 104.61,129.86 46.34,98.83 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #440154; fill-opacity: 0.15;' />
+<polyline points='46.34,34.77 104.61,87.85 162.88,140.30 221.15,186.65 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polyline points='221.15,199.30 162.88,161.53 104.61,129.86 46.34,98.83 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polygon points='46.34,58.47 104.61,111.64 162.88,164.20 221.15,207.50 221.15,220.59 162.88,179.78 104.61,148.22 46.34,117.27 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #21908C; fill-opacity: 0.15;' />
+<polyline points='46.34,58.47 104.61,111.64 162.88,164.20 221.15,207.50 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polyline points='221.15,220.59 162.88,179.78 104.61,148.22 46.34,117.27 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polygon points='46.34,81.68 104.61,134.64 162.88,186.08 221.15,225.87 221.15,244.37 162.88,200.04 104.61,167.37 46.34,136.20 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #FDE725; fill-opacity: 0.15;' />
+<polyline points='46.34,81.68 104.61,134.64 162.88,186.08 221.15,225.87 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polyline points='221.15,244.37 162.88,200.04 104.61,167.37 46.34,136.20 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<rect x='37.60' y='24.29' width='192.29' height='230.56' style='stroke-width: 1.07; stroke: #333333;' />
+</g>
+<g clip-path='url(#cpMC4wMHwzNjAuMDB8MC4wMHwyODguMDA=)'>
+<text x='32.67' y='229.72' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.0</text>
+<text x='32.67' y='162.89' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.4</text>
+<text x='32.67' y='96.07' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.8</text>
+<text x='32.67' y='29.24' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>1.2</text>
+<polyline points='34.86,226.28 37.60,226.28 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='34.86,159.46 37.60,159.46 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='34.86,92.63 37.60,92.63 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='34.86,25.81 37.60,25.81 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='46.34,257.59 46.34,254.85 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='104.61,257.59 104.61,254.85 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='162.88,257.59 162.88,254.85 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='221.15,257.59 221.15,254.85 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<text x='46.34' y='266.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.4</text>
+<text x='104.61' y='266.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.5</text>
+<text x='162.88' y='266.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.6</text>
+<text x='221.15' y='266.65' text-anchor='middle' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>0.7</text>
+<text x='133.74' y='280.00' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='162.10px' lengthAdjust='spacingAndGlyphs'>Ribosomal Protein GC content</text>
+<text transform='translate(14.08,139.57) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='151.40px' lengthAdjust='spacingAndGlyphs'>Atom Fraction Excess (AFE)</text>
+<rect x='240.85' y='93.39' width='113.67' height='92.36' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<text x='246.33' y='108.73' style='font-size: 12.00px; font-family: "Arial";' textLength='98.06px' lengthAdjust='spacingAndGlyphs'>Ribosomal Protein</text>
+<text x='246.33' y='121.69' style='font-size: 12.00px; font-family: "Arial";' textLength='102.72px' lengthAdjust='spacingAndGlyphs'>Codon Bias (ENC`)</text>
+<rect x='246.33' y='128.43' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<line x1='248.05' y1='137.07' x2='261.88' y2='137.07' style='stroke-width: 1.49; stroke: #440154; stroke-linecap: butt;' />
+<rect x='247.03' y='129.13' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #440154; stroke-linecap: butt; stroke-linejoin: miter; fill: #333333; fill-opacity: 0.15;' />
+<rect x='246.33' y='145.71' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<line x1='248.05' y1='154.35' x2='261.88' y2='154.35' style='stroke-width: 1.49; stroke: #21908C; stroke-linecap: butt;' />
+<rect x='247.03' y='146.41' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #21908C; stroke-linecap: butt; stroke-linejoin: miter; fill: #333333; fill-opacity: 0.15;' />
+<rect x='246.33' y='162.99' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<line x1='248.05' y1='171.63' x2='261.88' y2='171.63' style='stroke-width: 1.49; stroke: #FDE725; stroke-linecap: butt;' />
+<rect x='247.03' y='163.69' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: #FDE725; stroke-linecap: butt; stroke-linejoin: miter; fill: #333333; fill-opacity: 0.15;' />
+<text x='269.09' y='140.50' style='font-size: 9.60px; font-family: "Arial";' textLength='24.00px' lengthAdjust='spacingAndGlyphs'>41.54</text>
+<text x='269.09' y='157.78' style='font-size: 9.60px; font-family: "Arial";' textLength='24.00px' lengthAdjust='spacingAndGlyphs'>44.23</text>
+<text x='269.09' y='175.06' style='font-size: 9.60px; font-family: "Arial";' textLength='24.00px' lengthAdjust='spacingAndGlyphs'>46.92</text>
+</g>
+</svg>

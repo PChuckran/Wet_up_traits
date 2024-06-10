@@ -1,3 +1,5 @@
+## Calculate 4-fold degeneracy for ribosomal protein genes
+
 library(tidyverse)
 
 codon_aa_key <- read_csv("data/codon_aa_key.csv")
@@ -49,10 +51,3 @@ degen_ribo_sum_wide <- degen_ribo_sum_wide %>%
   select(-c(A,C,G,T))
 
 write.csv(degen_ribo_sum_wide, file = "data/ribo_degenerate.csv")
-
-# ribo_cts_long <- ribo_cts_long %>%
-#   group_by(ID, MAG)%>%
-#   summarise(sum_cts = sum(ct, na.rm = T))%>%
-#   left_join(ribo_cts_long, .)%>%
-#   mutate(freq = ct/sum_cts)
-

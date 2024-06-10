@@ -69,11 +69,11 @@ module_names<- read.delim("data/module_names.txt", header = F)
 colnames(module_names) <- c( "module", "module_name")
 kegg_modules <- left_join(kegg_modules, module_names)
 
-c_sources <- read.csv("data/C_sources_curated.csv")
+#c_sources <- read.csv("data/C_sources_curated.csv")
 
 strategies <- read.csv("data/mag_strategies.csv")
 
-strategies <- strategies %>% select(MAG, strategy, strategy_broad)
+strategies <- strategies %>% select(MAG, strategy_broad)
 
 de_data_hq <- left_join(de_data_hq, strategies)
 
@@ -117,7 +117,7 @@ ribo_transcription_mags %>%
   theme_minimal()+
   ylab("Log-2 Fold Change")
 
-write.csv(ribo_transcription_mags, file = "ribo_transcription_mags.csv")
+write.csv(ribo_transcription_mags, file = "data/ribo_transcription_mags.csv")
 
 full_df <- read.csv(file = "data/full_traits_growth_df.csv")
 

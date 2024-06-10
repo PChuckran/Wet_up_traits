@@ -1,3 +1,6 @@
+## Run DESeq2 normalization on metatranscriptomic read mapping as counted via
+## featureCounts
+
 library(DESeq2)
 library(pheatmap)
 library(RColorBrewer)
@@ -37,27 +40,28 @@ annotated_geneIDs <- annotations %>%
 
 
 # Load all data
-all_data <- read.delim("data/old/all_cts_all_times.txt", sep = "\t", header = T)
+all_data <- read.delim("data/all_cts_all_times.txt", sep = "\t", header = T)
 
 rownames(all_data) <- all_data$Geneid
 
+# only get annotated genes
 quality_cts_annotated <- all_data %>%
   filter(Geneid %in% annotated_geneIDs$Geneid | str_detect(Geneid, "tRNA"))
 
+ref_annotations <- quality_cts_annotated %>%
+  select(Geneid)
+
+# Just get columns that refer to sample cts (no column for geneid or start and end position)
 quality_cts_annotated <- quality_cts_annotated %>% select(starts_with("X"))
 
-
-
-
-
-
+# turn NAs to zero
 quality_cts_annotated[is.na(quality_cts_annotated)] <- 0
-
 
 input_data <- as.matrix(quality_cts_annotated)
 
 rownames(input_data) <- ref_annotations$Geneid
 
+# parse column dames to treatment info
 coldata <- data.frame(file_name = colnames(input_data)) %>%
   mutate(time = str_match(file_name, "12C18O_([0-9]+)H")[,2],
          map = str_match(file_name, "12C18O_[0-9]+H_([0-9]+)")[,2],
@@ -66,10 +70,10 @@ coldata <- data.frame(file_name = colnames(input_data)) %>%
 coldata$time <- as.factor(coldata$time)
 coldata$map <- as.factor(coldata$map)
 
+# A check to make sure the column data matches the treatment info
 setequal(coldata$file_name, colnames(input_data))
-setdiff(coldata$file_name, colnames(input_data))
 
-
+# DESeq2 
 dds <- DESeqDataSetFromMatrix(countData = input_data,
                               colData = coldata,
                               design = ~ map+time+map:time)
@@ -86,7 +90,8 @@ resultsNames(dds)
 summary(results(dds, name = "time_3_vs_0"))
 
 
-
+## Extract comparisons from each time and treatment
+## Is there a better way to do this? Probably. 
 time_3<- as.data.frame(results(dds, name = "time_3_vs_0", test = "Wald"))
 time_3 <- tibble::rownames_to_column(time_3, "Geneid")
 time_3$trt <- "3_100"
@@ -165,19 +170,3 @@ normalized_counts <- normalized_counts %>%
 write.csv(de_time, file = "data/4w_de_cts_FC.csv")
 
 write.csv(normalized_counts, file = "data/Normalized_cts_FC.csv")
-
-de_time <- left_join(de_time, annotations)
-
-#vmags <- as.list(read_csv("~/Documents/Projects/Wet-up/vMAG_no_duplicats.txt"))
-
-temp <- de_time %>%
-  filter(str_detect(kegg_id, "K03320")) %>%
-  mutate(time = as.numeric(str_match(trt, "([0-9]+)_([0-9]+)")[,2]))
-
-temp %>%
-  ggplot(., aes(time, log2FoldChange, group = time))+
-  geom_boxplot()
-
-
-
-
