@@ -1,4 +1,3 @@
-# Wet_up_traits
 
 Associated code for analysis of data in *Codon bias, nucleotide selection, and genome size predict in situ bacterial growth rate and transcription in rewetted soil*. doi: https://doi.org/10.1101/2024.06.28.601247
 
