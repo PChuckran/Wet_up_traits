@@ -67,7 +67,7 @@ F3b <- full_df %>%
   ggplot(., aes(Time, ape.boot.median, fill = strategy_broad))+
   ylab("Atom fraction excess (AFE)")+
   xlab("Time after rewetting (h)")+
-  scale_fill_manual("", values = hawks)+
+  scale_fill_manual("Transcriptional\nRersponse", values = hawks)+
   geom_boxplot( alpha = 0.7)+
   theme_pete()
   #theme(legend.position = "none")
@@ -122,7 +122,7 @@ F3c <- summarized_df %>%
   geom_bar(stat = "identity")+
   xlab("Time after rewetting (h)")+
   ylab("")+
-  scale_fill_manual("", values = hawks)+
+  scale_fill_manual("Transcriptional\nRersponse", values = hawks)+
   theme_pete()
 
 layout <- "

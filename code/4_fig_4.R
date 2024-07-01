@@ -1,5 +1,5 @@
 library(tidyverse)
-library(patchwork)
+library(cowplot)
 library(ggsci)
 library(ggpmisc)
 
@@ -8,10 +8,13 @@ library(ggpmisc)
 full_df <- read.csv("data/full_traits_growth_df.csv")%>%
   unique()
 
+full_df <- full_df %>%
+  filter(Contamination < 10)
+
 theme_pete<- function() {
   theme_bw() %+replace%
     theme(
-      text=element_text(size=14, family="Arial"),
+      text=element_text(size=11, family="Arial"),
       #axis.title=element_text(family="Futura Medium"),
       #axis.text=element_text(family="Optima"),
       strip.background =element_blank(),
@@ -50,22 +53,24 @@ ct_by_strat_phy <- full_df %>%
          type = "Transcribing Taxa")%>%
   rename(category = strategy_broad)
 
+full_df$Timef <- factor(paste(full_df$Time, "h", sep = " "), levels = c("24 h", "48 h", "72 h", "168 h"))
+
 ct_by_strat_phy_growth <- full_df %>%
-  select(MAG, Time, phylum, ape.boot.median)%>%
+  select(MAG, Timef, phylum, ape.boot.median)%>%
   drop_na()%>%
-  group_by(Time, phylum)%>%
+  group_by(Timef, phylum)%>%
   summarise(ct = length(MAG))
 
 ct_by_strat_phy_growth <- full_df %>%
-  select(MAG, Time, phylum, ape.boot.median)%>%
+  select(MAG, Timef, phylum, ape.boot.median)%>%
   drop_na()%>%
   unique()%>%
-  group_by(Time)%>%
+  group_by(Timef)%>%
   summarise(ct_strat = length(MAG))%>%
   left_join(ct_by_strat_phy_growth, .)%>%
   mutate(perc = (ct/ct_strat),
          type = "Growing Taxa")%>%
-  rename(category = Time)
+  rename(category = Timef)
 
 ct_by_strat_phy_growth$category <- as.factor(ct_by_strat_phy_growth$category)
 
@@ -90,18 +95,55 @@ F4A <- ct_all %>%
         axis.text.x=element_blank())+
   coord_flip()+
   scale_x_discrete(limits=rev)+
-  facet_wrap(.~type, scales = "free", ncol = 1)
+  facet_wrap(.~type, scales = "free", ncol = 1)+
+  theme(legend.position = "right")
 
 F4A
 
-
-
-
-
-
-
+skoo <- full_df %>%
+  filter(!is.na(ape.boot.median) | !is.na(strategy_broad))
 
 F4B <- full_df %>%
+  filter(!is.na(ape.boot.median) | !is.na(strategy_broad))%>%
+  select(riboENC, MAG, phylum)%>%
+  unique()%>%
+  drop_na()%>%
+  ggplot(., aes(phylum, riboENC, color = phylum, fill = phylum))+
+  geom_jitter(alpha = 0.5, size = 1)+
+  geom_boxplot(alpha = 0.7)+
+  theme_pete()+
+  scale_color_manual(values = moab)+
+  scale_fill_manual(values = moab)+
+  xlab("Phylum")+
+  ylab("Ribosomal protein gene\ncodon bias (ENC`)")+
+  coord_flip()+
+  theme(legend.position = "none")+
+  scale_x_discrete(limits=rev)+
+  theme(legend.position = "none",
+        plot.margin = margin(1,1,1,1, "cm"))
+
+full_df %>%
+  filter(!is.na(ape.boot.median) | !is.na(strategy_broad))%>%
+  select(riboENC, MAG, phylum)%>%
+  unique()%>%
+  drop_na()%>%
+  ggplot(., aes(phylum, riboENC, color = phylum, fill = phylum))+
+  geom_jitter(alpha = 0.5, size = 1)+
+  geom_violin(alpha = 0.7)+
+  theme_pete()+
+  scale_color_manual(values = moab)+
+  scale_fill_manual(values = moab)+
+  xlab("Phylum")+
+  ylab("Ribosomal protein gene\ncodon bias (ENC`)")+
+  coord_flip()+
+  theme(legend.position = "none")+
+  scale_x_discrete(limits=rev)
+
+
+
+F4B
+
+F4C <- full_df %>%
   #drop_na(Time)%>%
   select(MAG, riboENC, phylum, strategy_broad)%>%
   #filter(riboENC < 50)%>%
@@ -114,15 +156,18 @@ F4B <- full_df %>%
   theme_pete()+
   coord_flip()+
   scale_fill_manual(values = short)+
-  ylab("Ribosomal Protein Gene\nCodon Bias (ENC`)")+
+  ylab("Ribosomal protein gene\ncodon bias (ENC`)")+
   xlab("Transcriptional response")+
-  facet_wrap(.~phylum, scales = "free_x")
+  facet_wrap(.~phylum)+
+  theme(legend.position = "none")+
+  theme(legend.position = "none",
+        plot.margin = margin(0,1,0,1, "cm"))
 
 
 
 my.formula <- y ~ poly(x, 1, raw=TRUE)
 
-F4C <- full_df %>%
+F4D <- full_df %>%
   #drop_na(Time)%>%
   select(MAG, riboENC, phylum, ape.boot.median, Time)%>%
   drop_na()%>%
@@ -142,22 +187,42 @@ F4C <- full_df %>%
   theme_pete()+
   scale_color_manual(values = short)+
   scale_x_continuous(trans='log10')+
-  xlab("Ribosomal Protein Gene\nCodon Bias (ENC`)")+
+  xlab("Ribosomal protein gene\ncodon bias (ENC`)")+
   ylab("Atom fraction excess (AFE)")+
   geom_smooth(method = "lm",  formula = my.formula, se = F)+
-  facet_wrap(.~Time)
-F4C
+  facet_wrap(.~Time)+
+  theme(legend.position = "none",
+        plot.margin = margin(0,2,0,2, "cm"))
+          
+F4D
 
-layout <- "
-AB
-AC
-"
+ 
+ # layout <- "
+ # AB
+ # AB
+ # CD
+ # "
+# 
+# layout <- "
+# A#
+# AC
+# BD
+# B#
+# "
+# 
+# Fig_4 <- F4A+F4B+F4D+F4C+
+#    plot_layout(design = layout)+
+#    plot_annotation(tag_levels = "a")
+# Fig_4
+# 
+# Fig_4 <- plot_grid(F4A, F4B, F4D, F4C, labels = "B", rel_heights = c(2,1))
+# fbcd <- plot_grid(F4B, F4D, F4C, labels = c("B", "C", "D"), ncol = 1, rel_heights = c(3,2,2))
+# Fig_4 <- plot_grid(F4A, fbcd, ncol = 2, labels = c("A", ""), rel_widths = c(3,2))
+# Fig_4
 
-Fig_4 <- F4A+F4C+F4B+
-  plot_layout(design = layout)+
-  plot_annotation(tag_levels = "a")
+Fig_4 <- plot_grid(F4A, F4B, F4D, F4C, labels = c("A", "B", "C", "D"), ncol = 2, rel_heights = c(3,2,2))
 
-ggsave(filename = "figures/Fig_4.png", width = 14, height = 9, Fig_4)
+ggsave(filename = "figures/Fig_4.png", width = 12, height = 11, Fig_4)
 
 
 

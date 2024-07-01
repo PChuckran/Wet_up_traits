@@ -361,31 +361,33 @@
 <text x='558.27' y='230.51' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.69px' lengthAdjust='spacingAndGlyphs'>168</text>
 <text x='482.58' y='242.98' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='113.34px' lengthAdjust='spacingAndGlyphs'>Time after rewetting (h)</text>
 <text transform='translate(349.50,121.23) rotate(-90)' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='133.91px' lengthAdjust='spacingAndGlyphs'>Atom fraction excess (AFE)</text>
-<rect x='599.50' y='73.35' width='109.54' height='95.75' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='604.98' y='94.51' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='613.62,110.06 613.62,107.47 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<polyline points='613.62,98.83 613.62,96.23 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='607.14' y='98.83' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #002244; fill-opacity: 0.70;' />
-<polyline points='607.14,103.15 620.10,103.15 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='604.98' y='111.79' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='613.62,127.34 613.62,124.75 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<polyline points='613.62,116.11 613.62,113.51 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='607.14' y='116.11' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #69BE28; fill-opacity: 0.70;' />
-<polyline points='607.14,120.43 620.10,120.43 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='604.98' y='129.07' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='613.62,144.62 613.62,142.03 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<polyline points='613.62,133.39 613.62,130.79 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='607.14' y='133.39' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #A8DDFF; fill-opacity: 0.70;' />
-<polyline points='607.14,137.71 620.10,137.71 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='604.98' y='146.35' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<polyline points='613.62,161.90 613.62,159.31 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<polyline points='613.62,150.67 613.62,148.07 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<rect x='607.14' y='150.67' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #A5ACAF; fill-opacity: 0.70;' />
-<polyline points='607.14,154.99 620.10,154.99 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
-<text x='627.74' y='106.30' style='font-size: 8.80px; font-family: "Arial";' textLength='69.95px' lengthAdjust='spacingAndGlyphs'>Early Responders</text>
-<text x='627.74' y='123.58' style='font-size: 8.80px; font-family: "Arial";' textLength='75.82px' lengthAdjust='spacingAndGlyphs'>Middle Responders</text>
-<text x='627.74' y='140.86' style='font-size: 8.80px; font-family: "Arial";' textLength='67.04px' lengthAdjust='spacingAndGlyphs'>Late Responders</text>
-<text x='627.74' y='158.14' style='font-size: 8.80px; font-family: "Arial";' textLength='35.70px' lengthAdjust='spacingAndGlyphs'>Sensitive</text>
+<rect x='599.50' y='67.41' width='109.54' height='107.63' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<text x='604.98' y='81.93' style='font-size: 11.00px; font-family: "Arial";' textLength='71.74px' lengthAdjust='spacingAndGlyphs'>Transcriptional</text>
+<text x='604.98' y='93.81' style='font-size: 11.00px; font-family: "Arial";' textLength='53.21px' lengthAdjust='spacingAndGlyphs'>Rersponse</text>
+<rect x='604.98' y='100.45' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<polyline points='613.62,116.00 613.62,113.41 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polyline points='613.62,104.77 613.62,102.17 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='607.14' y='104.77' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #002244; fill-opacity: 0.70;' />
+<polyline points='607.14,109.09 620.10,109.09 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='604.98' y='117.73' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<polyline points='613.62,133.28 613.62,130.69 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polyline points='613.62,122.05 613.62,119.45 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='607.14' y='122.05' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #69BE28; fill-opacity: 0.70;' />
+<polyline points='607.14,126.37 620.10,126.37 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='604.98' y='135.01' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<polyline points='613.62,150.56 613.62,147.97 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polyline points='613.62,139.33 613.62,136.73 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='607.14' y='139.33' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #A8DDFF; fill-opacity: 0.70;' />
+<polyline points='607.14,143.65 620.10,143.65 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='604.98' y='152.29' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<polyline points='613.62,167.84 613.62,165.25 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polyline points='613.62,156.61 613.62,154.01 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<rect x='607.14' y='156.61' width='12.96' height='8.64' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter; fill: #A5ACAF; fill-opacity: 0.70;' />
+<polyline points='607.14,160.93 620.10,160.93 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt; stroke-linejoin: miter;' />
+<text x='627.74' y='112.24' style='font-size: 8.80px; font-family: "Arial";' textLength='69.95px' lengthAdjust='spacingAndGlyphs'>Early Responders</text>
+<text x='627.74' y='129.52' style='font-size: 8.80px; font-family: "Arial";' textLength='75.82px' lengthAdjust='spacingAndGlyphs'>Middle Responders</text>
+<text x='627.74' y='146.80' style='font-size: 8.80px; font-family: "Arial";' textLength='67.04px' lengthAdjust='spacingAndGlyphs'>Late Responders</text>
+<text x='627.74' y='164.08' style='font-size: 8.80px; font-family: "Arial";' textLength='35.70px' lengthAdjust='spacingAndGlyphs'>Sensitive</text>
 <text x='336.86' y='21.79' text-anchor='middle' style='font-size: 13.20px; font-family: "Arial";' textLength='8.80px' lengthAdjust='spacingAndGlyphs'>B</text>
 </g>
 <defs>
@@ -439,19 +441,21 @@
 <text x='507.81' y='478.26' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='9.79px' lengthAdjust='spacingAndGlyphs'>72</text>
 <text x='558.27' y='478.26' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Arial";' textLength='14.69px' lengthAdjust='spacingAndGlyphs'>168</text>
 <text x='482.58' y='490.72' text-anchor='middle' style='font-size: 11.00px; font-family: "Arial";' textLength='113.34px' lengthAdjust='spacingAndGlyphs'>Time after rewetting (h)</text>
-<rect x='599.50' y='321.10' width='109.54' height='95.75' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='604.98' y='342.25' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='605.69' y='342.96' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #002244;' />
-<rect x='604.98' y='359.53' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='605.69' y='360.24' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #69BE28;' />
-<rect x='604.98' y='376.81' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='605.69' y='377.52' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #A8DDFF;' />
-<rect x='604.98' y='394.09' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<rect x='605.69' y='394.80' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #A5ACAF;' />
-<text x='627.74' y='354.04' style='font-size: 8.80px; font-family: "Arial";' textLength='69.95px' lengthAdjust='spacingAndGlyphs'>Early Responders</text>
-<text x='627.74' y='371.32' style='font-size: 8.80px; font-family: "Arial";' textLength='75.82px' lengthAdjust='spacingAndGlyphs'>Middle Responders</text>
-<text x='627.74' y='388.60' style='font-size: 8.80px; font-family: "Arial";' textLength='67.04px' lengthAdjust='spacingAndGlyphs'>Late Responders</text>
-<text x='627.74' y='405.88' style='font-size: 8.80px; font-family: "Arial";' textLength='35.70px' lengthAdjust='spacingAndGlyphs'>Sensitive</text>
+<rect x='599.50' y='315.16' width='109.54' height='107.63' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<text x='604.98' y='329.67' style='font-size: 11.00px; font-family: "Arial";' textLength='71.74px' lengthAdjust='spacingAndGlyphs'>Transcriptional</text>
+<text x='604.98' y='341.55' style='font-size: 11.00px; font-family: "Arial";' textLength='53.21px' lengthAdjust='spacingAndGlyphs'>Rersponse</text>
+<rect x='604.98' y='348.19' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='605.69' y='348.90' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #002244;' />
+<rect x='604.98' y='365.47' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='605.69' y='366.18' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #69BE28;' />
+<rect x='604.98' y='382.75' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='605.69' y='383.46' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #A8DDFF;' />
+<rect x='604.98' y='400.03' width='17.28' height='17.28' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='605.69' y='400.74' width='15.86' height='15.86' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #A5ACAF;' />
+<text x='627.74' y='359.98' style='font-size: 8.80px; font-family: "Arial";' textLength='69.95px' lengthAdjust='spacingAndGlyphs'>Early Responders</text>
+<text x='627.74' y='377.26' style='font-size: 8.80px; font-family: "Arial";' textLength='75.82px' lengthAdjust='spacingAndGlyphs'>Middle Responders</text>
+<text x='627.74' y='394.54' style='font-size: 8.80px; font-family: "Arial";' textLength='67.04px' lengthAdjust='spacingAndGlyphs'>Late Responders</text>
+<text x='627.74' y='411.82' style='font-size: 8.80px; font-family: "Arial";' textLength='35.70px' lengthAdjust='spacingAndGlyphs'>Sensitive</text>
 <text x='336.86' y='269.54' text-anchor='middle' style='font-size: 13.20px; font-family: "Arial";' textLength='9.53px' lengthAdjust='spacingAndGlyphs'>C</text>
 </g>
 </svg>

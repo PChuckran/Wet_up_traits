@@ -36,6 +36,14 @@ full_df$strategy_broad <- factor(full_df$strategy_broad, levels = c("Early Respo
                                                                     "Sensitive"))
 
 
+mod1 <- aov(riboENC~strategy_broad, full_df %>%
+  #filter(ENC < 50)%>%
+  select(strategy_broad, riboENC)%>%
+  drop_na()%>%
+  unique())
+
+summary(mod1)
+TukeyHSD(mod1)
 
 fig2a <- full_df %>%
   #filter(ENC < 50)%>%
@@ -46,7 +54,7 @@ fig2a <- full_df %>%
   geom_density(alpha = 0.9)+
   scale_fill_manual("Transcriptional\nResponse", values = whawks)+
   scale_color_manual("Transcriptional\nResponse", values = hawks)+
-  xlab("Effective Number of Codons (ENC`)")+
+  xlab("Effective Number of Codons (ENC`)\nof Ribosomal Protein Genes")+
   theme_pete()
 
 fig2a
